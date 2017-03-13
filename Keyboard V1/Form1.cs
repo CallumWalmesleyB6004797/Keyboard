@@ -99,7 +99,14 @@ namespace Keyboard_V1
 
         private void Mode_Btn_Click(object sender, EventArgs e)
         {
-
+            if (this.Mode_Box.Text == "Multi-Press")
+            {
+                this.Mode_Box.Text = "Prediction";
+            }
+            else if (this.Mode_Box.Text == "Prediction")
+            {
+                this.Mode_Box.Text = "Multi-Press";
+            }
         }
 
         private void Mode_Box_TextChanged(object sender, EventArgs e)

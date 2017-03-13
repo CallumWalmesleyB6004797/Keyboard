@@ -347,6 +347,7 @@
             this.Mode_Box.Size = new System.Drawing.Size(58, 20);
             this.Mode_Box.TabIndex = 22;
             this.Mode_Box.Text = "Multi-Press";
+            this.Mode_Box.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Mode_Box.TextChanged += new System.EventHandler(this.Mode_Box_TextChanged);
             // 
             // Seven_ListBox
