@@ -12,7 +12,7 @@ namespace Keyboard_V1
 {
     public partial class Form1 : Form
     {
-        int OneButtonPress = -1;
+        int OneButtonPress = -1; //Declaring global variables.
         int TwoButtonPress = -1;
         int ThreeButtonPress = -1;
         int FourButtonPress = -1;
@@ -34,77 +34,7 @@ namespace Keyboard_V1
 
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Seven_Btn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Eight_Btn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Nine_Btn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Six_Btn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Five_Btn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Four_Btn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void One_Btn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Two_Btn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Three_Btn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Hash_Btn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Symbols_Btn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
@@ -131,16 +61,25 @@ namespace Keyboard_V1
 
         }
 
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void One_ListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void One_Btn_Click_1(object sender, EventArgs e)
         {
-            if (Mode_Box.Text == "Multi-Press")
+            if (Mode_Box.Text == "Multi-Press") //If the text box has the writing "Multi-Press" inside, then execute the code.
             {
-                OneButtonPress++;
+                OneButtonPress++; //Increments the value of the variable by 1 everytime the button is clicked.
 
-                switch (OneButtonPress)
+                switch (OneButtonPress) //Switch case for the variable OneButtonPress
                 {
                     case 0:
-                        richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
+                        richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString(); //If the number is zero, then execute this.
                         break;
 
                     case 1:
@@ -173,22 +112,11 @@ namespace Keyboard_V1
 
                     case 8:
                         richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
-                        OneButtonPress = -1;
+                        OneButtonPress = -1; //I revert the value inside the variable to -1 so it will cycle through the switch case.
                         break;
                 }
             }
-        }
-
-
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void One_ListBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+        }      
 
         private void Two_Btn_Click_1(object sender, EventArgs e)
         {
@@ -521,6 +449,16 @@ namespace Keyboard_V1
                         break;
                 }
             }
+
+        }
+
+        private void Empty2_Btn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Hash_Btn_Click_1(object sender, EventArgs e)
+        {
 
         }
     }

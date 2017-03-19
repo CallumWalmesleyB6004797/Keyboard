@@ -157,6 +157,7 @@
             this.Empty2_Btn.Size = new System.Drawing.Size(57, 52);
             this.Empty2_Btn.TabIndex = 41;
             this.Empty2_Btn.UseVisualStyleBackColor = false;
+            this.Empty2_Btn.Click += new System.EventHandler(this.Empty2_Btn_Click);
             // 
             // Empty1_Btn
             // 
@@ -186,6 +187,7 @@
             this.Hash_Btn.TabIndex = 38;
             this.Hash_Btn.Text = "#\r\n000";
             this.Hash_Btn.UseVisualStyleBackColor = false;
+            this.Hash_Btn.Click += new System.EventHandler(this.Hash_Btn_Click_1);
             // 
             // Zero_Btn
             // 
