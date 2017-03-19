@@ -283,6 +283,7 @@
             this.Nine_Btn.TabIndex = 29;
             this.Nine_Btn.Text = "9\r\nDEF";
             this.Nine_Btn.UseVisualStyleBackColor = false;
+            this.Nine_Btn.Click += new System.EventHandler(this.Nine_Btn_Click_1);
             // 
             // Eight_Btn
             // 
