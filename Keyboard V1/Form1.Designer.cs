@@ -227,6 +227,7 @@
             this.Two_Btn.TabIndex = 34;
             this.Two_Btn.Text = "2\r\nTUV";
             this.Two_Btn.UseVisualStyleBackColor = false;
+            this.Two_Btn.Click += new System.EventHandler(this.Two_Btn_Click_1);
             // 
             // One_Btn
             // 

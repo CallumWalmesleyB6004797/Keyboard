@@ -189,5 +189,53 @@ namespace Keyboard_V1
         {
 
         }
+
+        private void Two_Btn_Click_1(object sender, EventArgs e)
+        {
+            TwoButtonPress++;
+
+            switch (TwoButtonPress)
+            {
+                case 0:
+                    richTextBox1.Text = Two_ListBox.Items[TwoButtonPress].ToString();
+                    break;
+
+                case 1:
+                    richTextBox1.Text = Two_ListBox.Items[TwoButtonPress].ToString();
+                    break;
+
+                case 2:
+                    richTextBox1.Text = Two_ListBox.Items[TwoButtonPress].ToString();
+                    break;
+
+                case 3:
+                    richTextBox1.Text = Two_ListBox.Items[TwoButtonPress].ToString();
+                    break;
+
+                case 4:
+                    richTextBox1.Text = Two_ListBox.Items[TwoButtonPress].ToString();
+                    break;
+
+                case 5:
+                    richTextBox1.Text = Two_ListBox.Items[TwoButtonPress].ToString();
+                    break;
+
+                case 6:
+                    richTextBox1.Text = Two_ListBox.Items[TwoButtonPress].ToString();
+                    break;
+
+                case 7:
+                    richTextBox1.Text = Two_ListBox.Items[TwoButtonPress].ToString();
+                    break;
+
+                case 8:
+                    richTextBox1.Text = Two_ListBox.Items[TwoButtonPress].ToString();
+                    break;
+
+                case 9:
+                    richTextBox1.Text = Two_ListBox.Items[TwoButtonPress].ToString();
+                    break;
+            }
+        }
     }
 }
