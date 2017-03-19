@@ -303,6 +303,7 @@
             this.Seven_Btn.TabIndex = 27;
             this.Seven_Btn.Text = "7\r\n .,\"\':;";
             this.Seven_Btn.UseVisualStyleBackColor = false;
+            this.Seven_Btn.Click += new System.EventHandler(this.Seven_Btn_Click_1);
             // 
             // Previous_Btn
             // 

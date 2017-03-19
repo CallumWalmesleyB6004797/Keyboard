@@ -400,5 +400,46 @@ namespace Keyboard_V1
             }
 
         }
+
+        private void Seven_Btn_Click_1(object sender, EventArgs e)
+        {
+            if (Mode_Box.Text == "Multi-Press")
+            {
+                SevenButtonPress++;
+
+                switch (SevenButtonPress)
+                {
+                    case 0:
+                        richTextBox1.Text = Seven_ListBox.Items[SevenButtonPress].ToString();
+                        break;
+
+                    case 1:
+                        richTextBox1.Text = Seven_ListBox.Items[SevenButtonPress].ToString();
+                        break;
+
+                    case 2:
+                        richTextBox1.Text = Seven_ListBox.Items[SevenButtonPress].ToString();
+                        break;
+
+                    case 3:
+                        richTextBox1.Text = Seven_ListBox.Items[SevenButtonPress].ToString();
+                        break;
+
+                    case 4:
+                        richTextBox1.Text = Seven_ListBox.Items[SevenButtonPress].ToString();
+                        break;
+
+                    case 5:
+                        richTextBox1.Text = Seven_ListBox.Items[SevenButtonPress].ToString();
+                        break;
+
+                    case 6:
+                        richTextBox1.Text = Seven_ListBox.Items[SevenButtonPress].ToString();
+                        SevenButtonPress = -1;
+                        break;
+                }
+            }
+
+        }
     }
 }
