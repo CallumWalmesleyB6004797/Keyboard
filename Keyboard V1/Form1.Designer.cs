@@ -86,6 +86,7 @@
             this.KeySequence_TextBox.Name = "KeySequence_TextBox";
             this.KeySequence_TextBox.Size = new System.Drawing.Size(100, 20);
             this.KeySequence_TextBox.TabIndex = 22;
+            this.KeySequence_TextBox.TextChanged += new System.EventHandler(this.KeySequence_TextBox_TextChanged);
             // 
             // menuStrip1
             // 

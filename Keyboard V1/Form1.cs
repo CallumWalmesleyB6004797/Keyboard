@@ -72,6 +72,8 @@ namespace Keyboard_V1
 
         private void One_Btn_Click_1(object sender, EventArgs e)
         {
+            KeySequence_TextBox.Text = "1";
+
             if (Mode_Box.Text == "Multi-Press") //If the text box has the writing "Multi-Press" inside, then execute the code.
             {
                 OneButtonPress++; //Increments the value of the variable by 1 everytime the button is clicked.
@@ -120,6 +122,8 @@ namespace Keyboard_V1
 
         private void Two_Btn_Click_1(object sender, EventArgs e)
         {
+            KeySequence_TextBox.Text = "2";
+
             if (Mode_Box.Text == "Multi-Press")
             {
                 TwoButtonPress++;
@@ -160,6 +164,8 @@ namespace Keyboard_V1
 
         private void Three_Btn_Click_1(object sender, EventArgs e)
         {
+            KeySequence_TextBox.Text = "3";
+
             if (Mode_Box.Text == "Multi-Press")
             {
                 ThreeButtonPress++;
@@ -207,6 +213,8 @@ namespace Keyboard_V1
 
         private void Four_Btn_Click_1(object sender, EventArgs e)
         {
+            KeySequence_TextBox.Text = "4";
+
             if (Mode_Box.Text == "Multi-Press")
             {
                 FourButtonPress++;
@@ -249,6 +257,8 @@ namespace Keyboard_V1
 
         private void Five_Btn_Click_1(object sender, EventArgs e)
         {
+            KeySequence_TextBox.Text = "5";
+
             if (Mode_Box.Text == "Multi-Press")
             {
                 FiveButtonPress++;
@@ -290,6 +300,8 @@ namespace Keyboard_V1
 
         private void Six_Btn_Click_1(object sender, EventArgs e)
         {
+            KeySequence_TextBox.Text = "6";
+
             if (Mode_Box.Text == "Multi-Press")
             {
                 SixButtonPress++;
@@ -331,6 +343,8 @@ namespace Keyboard_V1
 
         private void Seven_Btn_Click_1(object sender, EventArgs e)
         {
+            KeySequence_TextBox.Text = "7";
+
             if (Mode_Box.Text == "Multi-Press")
             {
                 SevenButtonPress++;
@@ -372,6 +386,8 @@ namespace Keyboard_V1
 
         private void Eight_Btn_Click_1(object sender, EventArgs e)
         {
+            KeySequence_TextBox.Text = "8";
+
             if (Mode_Box.Text == "Multi-Press")
             {
                 EightButtonPress++;
@@ -413,6 +429,8 @@ namespace Keyboard_V1
 
         private void Nine_Btn_Click_1(object sender, EventArgs e)
         {
+            KeySequence_TextBox.Text = "9";
+
             if (Mode_Box.Text == "Multi-Press")
             {
                 NineButtonPress++;
@@ -467,6 +485,11 @@ namespace Keyboard_V1
             Notepad.AppendText(Environment.NewLine);
             Notepad.Focus();
             
+        }
+
+        private void KeySequence_TextBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
