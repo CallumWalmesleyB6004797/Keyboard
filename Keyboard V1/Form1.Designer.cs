@@ -217,6 +217,7 @@
             this.Three_Btn.TabIndex = 35;
             this.Three_Btn.Text = "3\r\nWXYZ";
             this.Three_Btn.UseVisualStyleBackColor = false;
+            this.Three_Btn.Click += new System.EventHandler(this.Three_Btn_Click_1);
             // 
             // Two_Btn
             // 
@@ -269,6 +270,7 @@
             this.Four_Btn.TabIndex = 30;
             this.Four_Btn.Text = "4\r\nGHI";
             this.Four_Btn.UseVisualStyleBackColor = false;
+            this.Four_Btn.Click += new System.EventHandler(this.Four_Btn_Click_1);
             // 
             // Nine_Btn
             // 

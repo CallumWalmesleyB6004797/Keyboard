@@ -128,53 +128,57 @@ namespace Keyboard_V1
 
         private void Zero_Btn_Click(object sender, EventArgs e)
         {
-        
+
         }
 
         private void One_Btn_Click_1(object sender, EventArgs e)
         {
-            OneButtonPress++;
-
-            switch (OneButtonPress)
+            if (Mode_Box.Text == "Multi-Press")
             {
-                case 0:
-                    richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
-                    break;
+                OneButtonPress++;
 
-                case 1:
-                    richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
-                    break;
+                switch (OneButtonPress)
+                {
+                    case 0:
+                        richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
+                        break;
 
-                case 2:
-                    richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
-                    break;
+                    case 1:
+                        richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
+                        break;
 
-                case 3:
-                    richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
-                    break;
+                    case 2:
+                        richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
+                        break;
 
-                case 4:
-                    richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
-                    break;
+                    case 3:
+                        richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
+                        break;
 
-                case 5:
-                    richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
-                    break;
+                    case 4:
+                        richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
+                        break;
 
-                case 6:
-                    richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
-                    break;
+                    case 5:
+                        richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
+                        break;
 
-                case 7:
-                    richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
-                    break;
+                    case 6:
+                        richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
+                        break;
 
-                case 8:
-                    richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
-                    OneButtonPress = -1;
-                    break;
+                    case 7:
+                        richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
+                        break;
+
+                    case 8:
+                        richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
+                        OneButtonPress = -1;
+                        break;
+                }
             }
         }
+
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
@@ -188,39 +192,131 @@ namespace Keyboard_V1
 
         private void Two_Btn_Click_1(object sender, EventArgs e)
         {
-            TwoButtonPress++;
-
-            switch (TwoButtonPress)
+            if (Mode_Box.Text == "Multi-Press")
             {
-                case 0:
-                    richTextBox1.Text = Two_ListBox.Items[TwoButtonPress].ToString();
-                    break;
+                TwoButtonPress++;
 
-                case 1:
-                    richTextBox1.Text = Two_ListBox.Items[TwoButtonPress].ToString();
-                    break;
+                switch (TwoButtonPress)
+                {
+                    case 0:
+                        richTextBox1.Text = Two_ListBox.Items[TwoButtonPress].ToString();
+                        break;
 
-                case 2:
-                    richTextBox1.Text = Two_ListBox.Items[TwoButtonPress].ToString();
-                    break;
+                    case 1:
+                        richTextBox1.Text = Two_ListBox.Items[TwoButtonPress].ToString();
+                        break;
 
-                case 3:
-                    richTextBox1.Text = Two_ListBox.Items[TwoButtonPress].ToString();
-                    break;
+                    case 2:
+                        richTextBox1.Text = Two_ListBox.Items[TwoButtonPress].ToString();
+                        break;
 
-                case 4:
-                    richTextBox1.Text = Two_ListBox.Items[TwoButtonPress].ToString();
-                    break;
+                    case 3:
+                        richTextBox1.Text = Two_ListBox.Items[TwoButtonPress].ToString();
+                        break;
 
-                case 5:
-                    richTextBox1.Text = Two_ListBox.Items[TwoButtonPress].ToString();
-                    break;
+                    case 4:
+                        richTextBox1.Text = Two_ListBox.Items[TwoButtonPress].ToString();
+                        break;
 
-                case 6:
-                    richTextBox1.Text = Two_ListBox.Items[TwoButtonPress].ToString();
-                    TwoButtonPress = -1;
-                    break;
+                    case 5:
+                        richTextBox1.Text = Two_ListBox.Items[TwoButtonPress].ToString();
+                        break;
+
+                    case 6:
+                        richTextBox1.Text = Two_ListBox.Items[TwoButtonPress].ToString();
+                        TwoButtonPress = -1;
+                        break;
+                }
             }
+        }
+
+        private void Three_Btn_Click_1(object sender, EventArgs e)
+        {
+            if (Mode_Box.Text == "Multi-Press")
+            {
+                ThreeButtonPress++;
+
+                switch (ThreeButtonPress)
+                {
+                    case 0:
+                        richTextBox1.Text = Three_ListBox.Items[ThreeButtonPress].ToString();
+                        break;
+
+                    case 1:
+                        richTextBox1.Text = Three_ListBox.Items[ThreeButtonPress].ToString();
+                        break;
+
+                    case 2:
+                        richTextBox1.Text = Three_ListBox.Items[ThreeButtonPress].ToString();
+                        break;
+
+                    case 3:
+                        richTextBox1.Text = Three_ListBox.Items[ThreeButtonPress].ToString();
+                        break;
+
+                    case 4:
+                        richTextBox1.Text = Three_ListBox.Items[ThreeButtonPress].ToString();
+                        break;
+
+                    case 5:
+                        richTextBox1.Text = Three_ListBox.Items[ThreeButtonPress].ToString();
+                        break;
+
+                    case 6:
+                        richTextBox1.Text = Three_ListBox.Items[ThreeButtonPress].ToString();
+                        break;
+
+                    case 7:
+                        richTextBox1.Text = Three_ListBox.Items[ThreeButtonPress].ToString();
+                        break;
+                    case 8:
+                        richTextBox1.Text = Three_ListBox.Items[ThreeButtonPress].ToString();
+                        ThreeButtonPress = -1;
+                        break;
+                }
+            }
+        }
+
+        private void Four_Btn_Click_1(object sender, EventArgs e)
+        {
+            if (Mode_Box.Text == "Multi-Press")
+            {
+                FourButtonPress++;
+
+                switch (FourButtonPress)
+                {
+                    case 0:
+                        richTextBox1.Text = Four_ListBox.Items[FourButtonPress].ToString();
+                        break;
+
+                    case 1:
+                        richTextBox1.Text = Four_ListBox.Items[FourButtonPress].ToString();
+                        break;
+
+                    case 2:
+                        richTextBox1.Text = Four_ListBox.Items[FourButtonPress].ToString();
+                        break;
+
+                    case 3:
+                        richTextBox1.Text = Four_ListBox.Items[FourButtonPress].ToString();
+                        break;
+
+                    case 4:
+                        richTextBox1.Text = Four_ListBox.Items[FourButtonPress].ToString();
+                        break;
+
+                    case 5:
+                        richTextBox1.Text = Four_ListBox.Items[FourButtonPress].ToString();
+                        break;
+
+                    case 6:
+                        richTextBox1.Text = Four_ListBox.Items[FourButtonPress].ToString();
+                        FourButtonPress = -1;
+                        break;
+                }
+            }
+
+
         }
     }
 }
