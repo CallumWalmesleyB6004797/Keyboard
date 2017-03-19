@@ -12,6 +12,18 @@ namespace Keyboard_V1
 {
     public partial class Form1 : Form
     {
+        int OneButtonPress = -1;
+        int TwoButtonPress = -1;
+        int ThreeButtonPress = -1;
+        int FourButtonPress = -1;
+        int FiveButtonPress = -1;
+        int SixButtonPress = -1;
+        int SevenButtonPress = -1;
+        int EightButtonPress = -1;
+        int NineButtonPress = -1;
+        int ZeroButtonPress = -1;
+        int AsterixButtonPress = -1;
+        int HashButtonPress = -1;
         public Form1()
         {
             InitializeComponent();
@@ -110,6 +122,70 @@ namespace Keyboard_V1
         }
 
         private void Mode_Box_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Zero_Btn_Click(object sender, EventArgs e)
+        {
+        
+        }
+
+        private void One_Btn_Click_1(object sender, EventArgs e)
+        {
+            OneButtonPress++;
+
+            switch (OneButtonPress)
+            {
+                case 0:
+                    richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
+                    break;
+
+                case 1:
+                    richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
+                    break;
+
+                case 2:
+                    richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
+                    break;
+
+                case 3:
+                    richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
+                    break;
+
+                case 4:
+                    richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
+                    break;
+
+                case 5:
+                    richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
+                    break;
+
+                case 6:
+                    richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
+                    break;
+
+                case 7:
+                    richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
+                    break;
+
+                case 8:
+                    richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
+                    break;
+
+                case 9:
+                    richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
+                    break;
+
+            }
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void One_ListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

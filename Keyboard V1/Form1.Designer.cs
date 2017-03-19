@@ -196,6 +196,7 @@
             this.Zero_Btn.TabIndex = 37;
             this.Zero_Btn.Text = "000\r\n[ _ ]";
             this.Zero_Btn.UseVisualStyleBackColor = false;
+            this.Zero_Btn.Click += new System.EventHandler(this.Zero_Btn_Click);
             // 
             // Symbols_Btn
             // 
@@ -236,6 +237,7 @@
             this.One_Btn.TabIndex = 33;
             this.One_Btn.Text = "1\r\nPQRS";
             this.One_Btn.UseVisualStyleBackColor = false;
+            this.One_Btn.Click += new System.EventHandler(this.One_Btn_Click_1);
             // 
             // Six_Btn
             // 
@@ -338,6 +340,7 @@
             this.richTextBox1.Size = new System.Drawing.Size(183, 20);
             this.richTextBox1.TabIndex = 23;
             this.richTextBox1.Text = "";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // Mode_Box
             // 
@@ -497,6 +500,7 @@
             this.One_ListBox.Name = "One_ListBox";
             this.One_ListBox.Size = new System.Drawing.Size(29, 43);
             this.One_ListBox.TabIndex = 31;
+            this.One_ListBox.SelectedIndexChanged += new System.EventHandler(this.One_ListBox_SelectedIndexChanged);
             // 
             // Hash_ListBox
             // 
