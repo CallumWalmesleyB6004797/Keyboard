@@ -29,7 +29,7 @@ namespace Keyboard_V1
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void Notepad_TextChanged(object sender, EventArgs e)
         {
 
         }
@@ -460,6 +460,13 @@ namespace Keyboard_V1
         private void Hash_Btn_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void Enter_Btn_Click(object sender, EventArgs e)
+        {
+            Notepad.AppendText(Environment.NewLine);
+            Notepad.Focus();
+            
         }
     }
 }

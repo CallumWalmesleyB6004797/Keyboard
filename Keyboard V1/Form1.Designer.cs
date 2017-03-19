@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Notepad = new System.Windows.Forms.TextBox();
             this.KeySequence_TextBox = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -70,15 +70,15 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // Notepad
             // 
-            this.textBox1.Location = new System.Drawing.Point(0, 27);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(825, 137);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.Notepad.Location = new System.Drawing.Point(0, 27);
+            this.Notepad.Multiline = true;
+            this.Notepad.Name = "Notepad";
+            this.Notepad.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.Notepad.Size = new System.Drawing.Size(825, 137);
+            this.Notepad.TabIndex = 0;
+            this.Notepad.TextChanged += new System.EventHandler(this.Notepad_TextChanged);
             // 
             // KeySequence_TextBox
             // 
@@ -148,6 +148,7 @@
             this.Enter_Btn.TabIndex = 42;
             this.Enter_Btn.Text = "Enter";
             this.Enter_Btn.UseVisualStyleBackColor = false;
+            this.Enter_Btn.Click += new System.EventHandler(this.Enter_Btn_Click);
             // 
             // Empty2_Btn
             // 
@@ -554,7 +555,7 @@
             this.Controls.Add(this.Eight_ListBox);
             this.Controls.Add(this.Seven_ListBox);
             this.Controls.Add(this.KeySequence_TextBox);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Notepad);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.panel1);
             this.MainMenuStrip = this.menuStrip1;
@@ -572,7 +573,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Notepad;
         private System.Windows.Forms.TextBox KeySequence_TextBox;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
