@@ -171,12 +171,8 @@ namespace Keyboard_V1
 
                 case 8:
                     richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
+                    OneButtonPress = -1;
                     break;
-
-                case 9:
-                    richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
-                    break;
-
             }
         }
 
@@ -222,18 +218,7 @@ namespace Keyboard_V1
 
                 case 6:
                     richTextBox1.Text = Two_ListBox.Items[TwoButtonPress].ToString();
-                    break;
-
-                case 7:
-                    richTextBox1.Text = Two_ListBox.Items[TwoButtonPress].ToString();
-                    break;
-
-                case 8:
-                    richTextBox1.Text = Two_ListBox.Items[TwoButtonPress].ToString();
-                    break;
-
-                case 9:
-                    richTextBox1.Text = Two_ListBox.Items[TwoButtonPress].ToString();
+                    TwoButtonPress = -1;
                     break;
             }
         }
