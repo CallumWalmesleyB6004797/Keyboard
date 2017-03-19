@@ -250,6 +250,7 @@
             this.Six_Btn.TabIndex = 32;
             this.Six_Btn.Text = "6\r\nMNO";
             this.Six_Btn.UseVisualStyleBackColor = false;
+            this.Six_Btn.Click += new System.EventHandler(this.Six_Btn_Click_1);
             // 
             // Five_Btn
             // 

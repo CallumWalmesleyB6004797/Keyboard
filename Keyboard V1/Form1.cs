@@ -359,5 +359,46 @@ namespace Keyboard_V1
             }
 
         }
+
+        private void Six_Btn_Click_1(object sender, EventArgs e)
+        {
+            if (Mode_Box.Text == "Multi-Press")
+            {
+                SixButtonPress++;
+
+                switch (SixButtonPress)
+                {
+                    case 0:
+                        richTextBox1.Text = Six_ListBox.Items[SixButtonPress].ToString();
+                        break;
+
+                    case 1:
+                        richTextBox1.Text = Six_ListBox.Items[SixButtonPress].ToString();
+                        break;
+
+                    case 2:
+                        richTextBox1.Text = Six_ListBox.Items[SixButtonPress].ToString();
+                        break;
+
+                    case 3:
+                        richTextBox1.Text = Six_ListBox.Items[SixButtonPress].ToString();
+                        break;
+
+                    case 4:
+                        richTextBox1.Text = Six_ListBox.Items[SixButtonPress].ToString();
+                        break;
+
+                    case 5:
+                        richTextBox1.Text = Six_ListBox.Items[SixButtonPress].ToString();
+                        break;
+
+                    case 6:
+                        richTextBox1.Text = Six_ListBox.Items[SixButtonPress].ToString();
+                        SixButtonPress = -1;
+                        break;
+                }
+            }
+
+        }
     }
 }
