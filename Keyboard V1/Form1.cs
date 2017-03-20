@@ -24,6 +24,7 @@ namespace Keyboard_V1
         int ZeroButtonPress = -1;
         int AsterixButtonPress = -1;
         int HashButtonPress = -1;
+        String str_keystrokes;
         public Form1()
         {
             InitializeComponent();
