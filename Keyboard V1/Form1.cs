@@ -25,6 +25,7 @@ namespace Keyboard_V1
         int AsterixButtonPress = -1;
         int HashButtonPress = -1;
         String str_keystrokes;
+        int Int_Interval_Required = 500; //500 Milliseconds (0.5 Seconds).
         public Form1()
         {
             InitializeComponent();
@@ -493,6 +494,11 @@ namespace Keyboard_V1
         }
 
         private void KeySequence_TextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ButtonTimer_Tick(object sender, EventArgs e)
         {
 
         }

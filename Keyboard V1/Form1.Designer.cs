@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.Notepad = new System.Windows.Forms.TextBox();
             this.KeySequence_TextBox = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -66,6 +67,7 @@
             this.One_ListBox = new System.Windows.Forms.ListBox();
             this.Hash_ListBox = new System.Windows.Forms.ListBox();
             this.Asterix_ListBox = new System.Windows.Forms.ListBox();
+            this.ButtonTimer = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -538,6 +540,11 @@
             this.Asterix_ListBox.Size = new System.Drawing.Size(29, 43);
             this.Asterix_ListBox.TabIndex = 34;
             // 
+            // ButtonTimer
+            // 
+            this.ButtonTimer.Interval = 500;
+            this.ButtonTimer.Tick += new System.EventHandler(this.ButtonTimer_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -612,6 +619,7 @@
         private System.Windows.Forms.ListBox One_ListBox;
         private System.Windows.Forms.ListBox Hash_ListBox;
         private System.Windows.Forms.ListBox Asterix_ListBox;
+        private System.Windows.Forms.Timer ButtonTimer;
     }
 }
 
