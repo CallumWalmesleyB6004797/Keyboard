@@ -73,53 +73,55 @@ namespace Keyboard_V1
 
         private void One_Btn_Click_1(object sender, EventArgs e)
         {
-            KeySequence_TextBox.Text = "1";
-
-            if (Mode_Box.Text == "Multi-Press") //If the text box has the writing "Multi-Press" inside, then execute the code.
-            {
-                OneButtonPress++; //Increments the value of the variable by 1 everytime the button is clicked.
-
-                switch (OneButtonPress) //Switch case for the variable OneButtonPress
+            KeySequence_TextBox.AppendText("1".ToString());
+            //If the text box has the writing "Multi-Press" inside, then execute the code.
+            if (Mode_Box.Text == "Multi-Press")
+            {   //Increments the value of the variable by 1 everytime the button is clicked.
+                OneButtonPress++;
+                //Switch case for the variable OneButtonPress
+                switch (OneButtonPress)
                 {
                     case 0:
-                        richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString(); //If the number is zero, then execute this.
+                        richTextBox1.AppendText(One_ListBox.Items[OneButtonPress].ToString()); //If the number is zero, then execute this.
                         break;
 
                     case 1:
-                        richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
+                        richTextBox1.AppendText(One_ListBox.Items[OneButtonPress].ToString());
                         break;
 
                     case 2:
-                        richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
+                        richTextBox1.AppendText(One_ListBox.Items[OneButtonPress].ToString());
                         break;
 
                     case 3:
-                        richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
+                        richTextBox1.AppendText(One_ListBox.Items[OneButtonPress].ToString());
                         break;
 
                     case 4:
-                        richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
+                        richTextBox1.AppendText(One_ListBox.Items[OneButtonPress].ToString());
                         break;
 
                     case 5:
-                        richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
+                        richTextBox1.AppendText(One_ListBox.Items[OneButtonPress].ToString());
                         break;
 
                     case 6:
-                        richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
+                        richTextBox1.AppendText(One_ListBox.Items[OneButtonPress].ToString());
                         break;
 
                     case 7:
-                        richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
+                        richTextBox1.AppendText(One_ListBox.Items[OneButtonPress].ToString());
                         break;
 
                     case 8:
-                        richTextBox1.Text = One_ListBox.Items[OneButtonPress].ToString();
-                        OneButtonPress = -1; //I revert the value inside the variable to -1 so it will cycle through the switch case.
+                        richTextBox1.AppendText(One_ListBox.Items[OneButtonPress].ToString());
+                        //I revert the value inside the variable to -1 so it will cycle through the switch case.
+                        OneButtonPress = -1;
                         break;
                 }
             }
-        }      
+        }
+      
 
         private void Two_Btn_Click_1(object sender, EventArgs e)
         {
