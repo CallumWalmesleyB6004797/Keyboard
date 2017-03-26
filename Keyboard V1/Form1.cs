@@ -125,50 +125,51 @@ namespace Keyboard_V1
 
         private void Two_Btn_Click_1(object sender, EventArgs e)
         {
-            KeySequence_TextBox.Text = "2";
-
+            KeySequence_TextBox.AppendText("2".ToString());
+            
             if (Mode_Box.Text == "Multi-Press")
-            {
+            {   
                 TwoButtonPress++;
 
                 switch (TwoButtonPress)
                 {
                     case 0:
-                        richTextBox1.Text = Two_ListBox.Items[TwoButtonPress].ToString();
+                        richTextBox1.AppendText(Two_ListBox.Items[TwoButtonPress].ToString());
                         break;
 
                     case 1:
-                        richTextBox1.Text = Two_ListBox.Items[TwoButtonPress].ToString();
+                        richTextBox1.AppendText(Two_ListBox.Items[TwoButtonPress].ToString());
                         break;
 
                     case 2:
-                        richTextBox1.Text = Two_ListBox.Items[TwoButtonPress].ToString();
+                        richTextBox1.AppendText(Two_ListBox.Items[TwoButtonPress].ToString());
                         break;
 
                     case 3:
-                        richTextBox1.Text = Two_ListBox.Items[TwoButtonPress].ToString();
+                        richTextBox1.AppendText(Two_ListBox.Items[TwoButtonPress].ToString());
                         break;
 
                     case 4:
-                        richTextBox1.Text = Two_ListBox.Items[TwoButtonPress].ToString();
+                        richTextBox1.AppendText(Two_ListBox.Items[TwoButtonPress].ToString());
                         break;
 
                     case 5:
-                        richTextBox1.Text = Two_ListBox.Items[TwoButtonPress].ToString();
+                        richTextBox1.AppendText(Two_ListBox.Items[TwoButtonPress].ToString());
                         break;
 
                     case 6:
-                        richTextBox1.Text = Two_ListBox.Items[TwoButtonPress].ToString();
+                        richTextBox1.AppendText(Two_ListBox.Items[TwoButtonPress].ToString());
                         TwoButtonPress = -1;
-                        break;
+                        break;                    
                 }
             }
         }
 
+
         private void Three_Btn_Click_1(object sender, EventArgs e)
         {
-            KeySequence_TextBox.Text = "3";
-
+            KeySequence_TextBox.AppendText("3".ToString());
+            
             if (Mode_Box.Text == "Multi-Press")
             {
                 ThreeButtonPress++;
@@ -176,47 +177,49 @@ namespace Keyboard_V1
                 switch (ThreeButtonPress)
                 {
                     case 0:
-                        richTextBox1.Text = Three_ListBox.Items[ThreeButtonPress].ToString();
+                        richTextBox1.AppendText(Three_ListBox.Items[ThreeButtonPress].ToString());
                         break;
 
                     case 1:
-                        richTextBox1.Text = Three_ListBox.Items[ThreeButtonPress].ToString();
+                        richTextBox1.AppendText(Three_ListBox.Items[ThreeButtonPress].ToString());
                         break;
 
                     case 2:
-                        richTextBox1.Text = Three_ListBox.Items[ThreeButtonPress].ToString();
+                        richTextBox1.AppendText(Three_ListBox.Items[ThreeButtonPress].ToString());
                         break;
 
                     case 3:
-                        richTextBox1.Text = Three_ListBox.Items[ThreeButtonPress].ToString();
+                        richTextBox1.AppendText(Three_ListBox.Items[ThreeButtonPress].ToString());
                         break;
 
                     case 4:
-                        richTextBox1.Text = Three_ListBox.Items[ThreeButtonPress].ToString();
+                        richTextBox1.AppendText(Three_ListBox.Items[ThreeButtonPress].ToString());
                         break;
 
                     case 5:
-                        richTextBox1.Text = Three_ListBox.Items[ThreeButtonPress].ToString();
+                        richTextBox1.AppendText(Three_ListBox.Items[ThreeButtonPress].ToString());
                         break;
 
                     case 6:
-                        richTextBox1.Text = Three_ListBox.Items[ThreeButtonPress].ToString();
+                        richTextBox1.AppendText(Three_ListBox.Items[ThreeButtonPress].ToString());                        
+                        break;
+                    
+                    case 7:
+                        richTextBox1.AppendText(Three_ListBox.Items[ThreeButtonPress].ToString());
                         break;
 
-                    case 7:
-                        richTextBox1.Text = Three_ListBox.Items[ThreeButtonPress].ToString();
-                        break;
                     case 8:
-                        richTextBox1.Text = Three_ListBox.Items[ThreeButtonPress].ToString();
+                        richTextBox1.AppendText(Three_ListBox.Items[ThreeButtonPress].ToString());
                         ThreeButtonPress = -1;
                         break;
                 }
             }
         }
 
+
         private void Four_Btn_Click_1(object sender, EventArgs e)
         {
-            KeySequence_TextBox.Text = "4";
+            KeySequence_TextBox.AppendText("4".ToString());
 
             if (Mode_Box.Text == "Multi-Press")
             {
@@ -225,42 +228,41 @@ namespace Keyboard_V1
                 switch (FourButtonPress)
                 {
                     case 0:
-                        richTextBox1.Text = Four_ListBox.Items[FourButtonPress].ToString();
+                        richTextBox1.AppendText(Four_ListBox.Items[FourButtonPress].ToString());
                         break;
 
                     case 1:
-                        richTextBox1.Text = Four_ListBox.Items[FourButtonPress].ToString();
+                        richTextBox1.AppendText(Four_ListBox.Items[FourButtonPress].ToString());
                         break;
 
                     case 2:
-                        richTextBox1.Text = Four_ListBox.Items[FourButtonPress].ToString();
+                        richTextBox1.AppendText(Four_ListBox.Items[FourButtonPress].ToString());
                         break;
 
                     case 3:
-                        richTextBox1.Text = Four_ListBox.Items[FourButtonPress].ToString();
+                        richTextBox1.AppendText(Four_ListBox.Items[FourButtonPress].ToString());
                         break;
 
                     case 4:
-                        richTextBox1.Text = Four_ListBox.Items[FourButtonPress].ToString();
+                        richTextBox1.AppendText(Four_ListBox.Items[FourButtonPress].ToString());
                         break;
 
                     case 5:
-                        richTextBox1.Text = Four_ListBox.Items[FourButtonPress].ToString();
+                        richTextBox1.AppendText(Four_ListBox.Items[FourButtonPress].ToString());
                         break;
 
                     case 6:
-                        richTextBox1.Text = Four_ListBox.Items[FourButtonPress].ToString();
+                        richTextBox1.AppendText(Four_ListBox.Items[FourButtonPress].ToString());
                         FourButtonPress = -1;
                         break;
                 }
             }
-
-
         }
+
 
         private void Five_Btn_Click_1(object sender, EventArgs e)
         {
-            KeySequence_TextBox.Text = "5";
+            KeySequence_TextBox.AppendText("5".ToString());
 
             if (Mode_Box.Text == "Multi-Press")
             {
@@ -269,41 +271,41 @@ namespace Keyboard_V1
                 switch (FiveButtonPress)
                 {
                     case 0:
-                        richTextBox1.Text = Five_ListBox.Items[FiveButtonPress].ToString();
+                        richTextBox1.AppendText(Five_ListBox.Items[FiveButtonPress].ToString());
                         break;
 
                     case 1:
-                        richTextBox1.Text = Five_ListBox.Items[FiveButtonPress].ToString();
+                        richTextBox1.AppendText(Five_ListBox.Items[FiveButtonPress].ToString());
                         break;
 
                     case 2:
-                        richTextBox1.Text = Five_ListBox.Items[FiveButtonPress].ToString();
+                        richTextBox1.AppendText(Five_ListBox.Items[FiveButtonPress].ToString());
                         break;
 
                     case 3:
-                        richTextBox1.Text = Five_ListBox.Items[FiveButtonPress].ToString();
+                        richTextBox1.AppendText(Five_ListBox.Items[FiveButtonPress].ToString());
                         break;
 
                     case 4:
-                        richTextBox1.Text = Five_ListBox.Items[FiveButtonPress].ToString();
+                        richTextBox1.AppendText(Five_ListBox.Items[FiveButtonPress].ToString());
                         break;
 
                     case 5:
-                        richTextBox1.Text = Five_ListBox.Items[FiveButtonPress].ToString();
+                        richTextBox1.AppendText(Five_ListBox.Items[FiveButtonPress].ToString());
                         break;
 
                     case 6:
-                        richTextBox1.Text = Five_ListBox.Items[FiveButtonPress].ToString();
+                        richTextBox1.AppendText(Five_ListBox.Items[FiveButtonPress].ToString());
                         FiveButtonPress = -1;
                         break;
                 }
             }
-
         }
+
 
         private void Six_Btn_Click_1(object sender, EventArgs e)
         {
-            KeySequence_TextBox.Text = "6";
+            KeySequence_TextBox.AppendText("6".ToString());
 
             if (Mode_Box.Text == "Multi-Press")
             {
@@ -312,41 +314,41 @@ namespace Keyboard_V1
                 switch (SixButtonPress)
                 {
                     case 0:
-                        richTextBox1.Text = Six_ListBox.Items[SixButtonPress].ToString();
+                        richTextBox1.AppendText(Six_ListBox.Items[SixButtonPress].ToString());
                         break;
 
                     case 1:
-                        richTextBox1.Text = Six_ListBox.Items[SixButtonPress].ToString();
+                        richTextBox1.AppendText(Six_ListBox.Items[SixButtonPress].ToString());
                         break;
 
                     case 2:
-                        richTextBox1.Text = Six_ListBox.Items[SixButtonPress].ToString();
+                        richTextBox1.AppendText(Six_ListBox.Items[SixButtonPress].ToString());
                         break;
 
                     case 3:
-                        richTextBox1.Text = Six_ListBox.Items[SixButtonPress].ToString();
+                        richTextBox1.AppendText(Six_ListBox.Items[SixButtonPress].ToString());
                         break;
 
                     case 4:
-                        richTextBox1.Text = Six_ListBox.Items[SixButtonPress].ToString();
+                        richTextBox1.AppendText(Six_ListBox.Items[SixButtonPress].ToString());
                         break;
 
                     case 5:
-                        richTextBox1.Text = Six_ListBox.Items[SixButtonPress].ToString();
+                        richTextBox1.AppendText(Six_ListBox.Items[SixButtonPress].ToString());
                         break;
 
                     case 6:
-                        richTextBox1.Text = Six_ListBox.Items[SixButtonPress].ToString();
+                        richTextBox1.AppendText(Six_ListBox.Items[SixButtonPress].ToString());
                         SixButtonPress = -1;
                         break;
                 }
             }
-
         }
+
 
         private void Seven_Btn_Click_1(object sender, EventArgs e)
         {
-            KeySequence_TextBox.Text = "7";
+            KeySequence_TextBox.AppendText("7".ToString());
 
             if (Mode_Box.Text == "Multi-Press")
             {
@@ -355,41 +357,41 @@ namespace Keyboard_V1
                 switch (SevenButtonPress)
                 {
                     case 0:
-                        richTextBox1.Text = Seven_ListBox.Items[SevenButtonPress].ToString();
+                        richTextBox1.AppendText(Seven_ListBox.Items[SevenButtonPress].ToString());
                         break;
 
                     case 1:
-                        richTextBox1.Text = Seven_ListBox.Items[SevenButtonPress].ToString();
+                        richTextBox1.AppendText(Seven_ListBox.Items[SevenButtonPress].ToString());
                         break;
 
                     case 2:
-                        richTextBox1.Text = Seven_ListBox.Items[SevenButtonPress].ToString();
+                        richTextBox1.AppendText(Seven_ListBox.Items[SevenButtonPress].ToString());
                         break;
 
                     case 3:
-                        richTextBox1.Text = Seven_ListBox.Items[SevenButtonPress].ToString();
+                        richTextBox1.AppendText(Seven_ListBox.Items[SevenButtonPress].ToString());
                         break;
 
                     case 4:
-                        richTextBox1.Text = Seven_ListBox.Items[SevenButtonPress].ToString();
+                        richTextBox1.AppendText(Seven_ListBox.Items[SevenButtonPress].ToString());
                         break;
 
                     case 5:
-                        richTextBox1.Text = Seven_ListBox.Items[SevenButtonPress].ToString();
+                        richTextBox1.AppendText(Seven_ListBox.Items[SevenButtonPress].ToString());
                         break;
 
                     case 6:
-                        richTextBox1.Text = Seven_ListBox.Items[SevenButtonPress].ToString();
+                        richTextBox1.AppendText(Seven_ListBox.Items[SevenButtonPress].ToString());
                         SevenButtonPress = -1;
                         break;
                 }
             }
-
         }
+
 
         private void Eight_Btn_Click_1(object sender, EventArgs e)
         {
-            KeySequence_TextBox.Text = "8";
+            KeySequence_TextBox.AppendText("8".ToString());
 
             if (Mode_Box.Text == "Multi-Press")
             {
@@ -398,41 +400,41 @@ namespace Keyboard_V1
                 switch (EightButtonPress)
                 {
                     case 0:
-                        richTextBox1.Text = Eight_ListBox.Items[EightButtonPress].ToString();
+                        richTextBox1.AppendText(Eight_ListBox.Items[EightButtonPress].ToString());
                         break;
 
                     case 1:
-                        richTextBox1.Text = Eight_ListBox.Items[EightButtonPress].ToString();
+                        richTextBox1.AppendText(Eight_ListBox.Items[EightButtonPress].ToString());
                         break;
 
                     case 2:
-                        richTextBox1.Text = Eight_ListBox.Items[EightButtonPress].ToString();
+                        richTextBox1.AppendText(Eight_ListBox.Items[EightButtonPress].ToString());
                         break;
 
                     case 3:
-                        richTextBox1.Text = Eight_ListBox.Items[EightButtonPress].ToString();
+                        richTextBox1.AppendText(Eight_ListBox.Items[EightButtonPress].ToString());
                         break;
 
                     case 4:
-                        richTextBox1.Text = Eight_ListBox.Items[EightButtonPress].ToString();
+                        richTextBox1.AppendText(Eight_ListBox.Items[EightButtonPress].ToString());
                         break;
 
                     case 5:
-                        richTextBox1.Text = Eight_ListBox.Items[EightButtonPress].ToString();
+                        richTextBox1.AppendText(Eight_ListBox.Items[EightButtonPress].ToString());
                         break;
 
                     case 6:
-                        richTextBox1.Text = Eight_ListBox.Items[EightButtonPress].ToString();
+                        richTextBox1.AppendText(Eight_ListBox.Items[EightButtonPress].ToString());
                         EightButtonPress = -1;
                         break;
                 }
             }
-
         }
+
 
         private void Nine_Btn_Click_1(object sender, EventArgs e)
         {
-            KeySequence_TextBox.Text = "9";
+            KeySequence_TextBox.AppendText("9".ToString());
 
             if (Mode_Box.Text == "Multi-Press")
             {
@@ -441,37 +443,37 @@ namespace Keyboard_V1
                 switch (NineButtonPress)
                 {
                     case 0:
-                        richTextBox1.Text = Nine_ListBox.Items[NineButtonPress].ToString();
+                        richTextBox1.AppendText(Nine_ListBox.Items[NineButtonPress].ToString());
                         break;
 
                     case 1:
-                        richTextBox1.Text = Nine_ListBox.Items[NineButtonPress].ToString();
+                        richTextBox1.AppendText(Nine_ListBox.Items[NineButtonPress].ToString());
                         break;
 
                     case 2:
-                        richTextBox1.Text = Nine_ListBox.Items[NineButtonPress].ToString();
+                        richTextBox1.AppendText(Nine_ListBox.Items[NineButtonPress].ToString());
                         break;
 
                     case 3:
-                        richTextBox1.Text = Nine_ListBox.Items[NineButtonPress].ToString();
+                        richTextBox1.AppendText(Nine_ListBox.Items[NineButtonPress].ToString());
                         break;
 
                     case 4:
-                        richTextBox1.Text = Nine_ListBox.Items[NineButtonPress].ToString();
+                        richTextBox1.AppendText(Nine_ListBox.Items[NineButtonPress].ToString());
                         break;
 
                     case 5:
-                        richTextBox1.Text = Nine_ListBox.Items[NineButtonPress].ToString();
+                        richTextBox1.AppendText(Nine_ListBox.Items[NineButtonPress].ToString());
                         break;
 
                     case 6:
-                        richTextBox1.Text = Nine_ListBox.Items[NineButtonPress].ToString();
+                        richTextBox1.AppendText(Nine_ListBox.Items[NineButtonPress].ToString());
                         NineButtonPress = -1;
                         break;
                 }
             }
-
         }
+
 
         private void Empty2_Btn_Click(object sender, EventArgs e)
         {
