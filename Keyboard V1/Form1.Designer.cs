@@ -54,7 +54,7 @@
             this.Previous_Btn = new System.Windows.Forms.Button();
             this.Next_Btn = new System.Windows.Forms.Button();
             this.Mode_Btn = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.WordBuilder = new System.Windows.Forms.RichTextBox();
             this.Mode_Box = new System.Windows.Forms.TextBox();
             this.Seven_ListBox = new System.Windows.Forms.ListBox();
             this.Eight_ListBox = new System.Windows.Forms.ListBox();
@@ -135,7 +135,7 @@
             this.panel1.Controls.Add(this.Previous_Btn);
             this.panel1.Controls.Add(this.Next_Btn);
             this.panel1.Controls.Add(this.Mode_Btn);
-            this.panel1.Controls.Add(this.richTextBox1);
+            this.panel1.Controls.Add(this.WordBuilder);
             this.panel1.Controls.Add(this.Mode_Box);
             this.panel1.Location = new System.Drawing.Point(262, 181);
             this.panel1.Name = "panel1";
@@ -213,6 +213,7 @@
             this.Symbols_Btn.TabIndex = 36;
             this.Symbols_Btn.Text = "*-_";
             this.Symbols_Btn.UseVisualStyleBackColor = false;
+            this.Symbols_Btn.Click += new System.EventHandler(this.Symbols_Btn_Click);
             // 
             // Three_Btn
             // 
@@ -347,14 +348,14 @@
             this.Mode_Btn.UseVisualStyleBackColor = false;
             this.Mode_Btn.Click += new System.EventHandler(this.Mode_Btn_Click);
             // 
-            // richTextBox1
+            // WordBuilder
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(15, 4);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(183, 20);
-            this.richTextBox1.TabIndex = 23;
-            this.richTextBox1.Text = "";
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            this.WordBuilder.Location = new System.Drawing.Point(15, 4);
+            this.WordBuilder.Name = "WordBuilder";
+            this.WordBuilder.Size = new System.Drawing.Size(183, 20);
+            this.WordBuilder.TabIndex = 23;
+            this.WordBuilder.Text = "";
+            this.WordBuilder.TextChanged += new System.EventHandler(this.WordBuilder_TextChanged);
             // 
             // Mode_Box
             // 
@@ -606,7 +607,7 @@
         private System.Windows.Forms.Button Previous_Btn;
         private System.Windows.Forms.Button Next_Btn;
         private System.Windows.Forms.Button Mode_Btn;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox WordBuilder;
         private System.Windows.Forms.TextBox Mode_Box;
         private System.Windows.Forms.ListBox Seven_ListBox;
         private System.Windows.Forms.ListBox Eight_ListBox;

@@ -21,7 +21,6 @@ namespace Keyboard_V1
         int SevenButtonPress = -1;
         int EightButtonPress = -1;
         int NineButtonPress = -1;
-        int ZeroButtonPress = -1;
         int AsterixButtonPress = -1;
         int HashButtonPress = -1;
         String str_keystrokes;
@@ -60,10 +59,13 @@ namespace Keyboard_V1
 
         private void Zero_Btn_Click(object sender, EventArgs e)
         {
-
+            Notepad.AppendText(WordBuilder.Text.ToString());
+            Notepad.AppendText(" ");
+            KeySequence_TextBox.Text = String.Empty;
+            
         }
 
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        private void WordBuilder_TextChanged(object sender, EventArgs e)
         {
 
         }
@@ -83,39 +85,39 @@ namespace Keyboard_V1
                 switch (OneButtonPress)
                 {
                     case 0:
-                        richTextBox1.AppendText(One_ListBox.Items[OneButtonPress].ToString()); //If the number is zero, then execute this.
+                        WordBuilder.AppendText(One_ListBox.Items[OneButtonPress].ToString()); //If the number is zero, then execute this.
                         break;
 
                     case 1:
-                        richTextBox1.AppendText(One_ListBox.Items[OneButtonPress].ToString());
+                        WordBuilder.AppendText(One_ListBox.Items[OneButtonPress].ToString());
                         break;
 
                     case 2:
-                        richTextBox1.AppendText(One_ListBox.Items[OneButtonPress].ToString());
+                        WordBuilder.AppendText(One_ListBox.Items[OneButtonPress].ToString());
                         break;
 
                     case 3:
-                        richTextBox1.AppendText(One_ListBox.Items[OneButtonPress].ToString());
+                        WordBuilder.AppendText(One_ListBox.Items[OneButtonPress].ToString());
                         break;
 
                     case 4:
-                        richTextBox1.AppendText(One_ListBox.Items[OneButtonPress].ToString());
+                        WordBuilder.AppendText(One_ListBox.Items[OneButtonPress].ToString());
                         break;
 
                     case 5:
-                        richTextBox1.AppendText(One_ListBox.Items[OneButtonPress].ToString());
+                        WordBuilder.AppendText(One_ListBox.Items[OneButtonPress].ToString());
                         break;
 
                     case 6:
-                        richTextBox1.AppendText(One_ListBox.Items[OneButtonPress].ToString());
+                        WordBuilder.AppendText(One_ListBox.Items[OneButtonPress].ToString());
                         break;
 
                     case 7:
-                        richTextBox1.AppendText(One_ListBox.Items[OneButtonPress].ToString());
+                        WordBuilder.AppendText(One_ListBox.Items[OneButtonPress].ToString());
                         break;
 
                     case 8:
-                        richTextBox1.AppendText(One_ListBox.Items[OneButtonPress].ToString());
+                        WordBuilder.AppendText(One_ListBox.Items[OneButtonPress].ToString());
                         //I revert the value inside the variable to -1 so it will cycle through the switch case.
                         OneButtonPress = -1;
                         break;
@@ -135,31 +137,31 @@ namespace Keyboard_V1
                 switch (TwoButtonPress)
                 {
                     case 0:
-                        richTextBox1.AppendText(Two_ListBox.Items[TwoButtonPress].ToString());
+                        WordBuilder.AppendText(Two_ListBox.Items[TwoButtonPress].ToString());
                         break;
 
                     case 1:
-                        richTextBox1.AppendText(Two_ListBox.Items[TwoButtonPress].ToString());
+                        WordBuilder.AppendText(Two_ListBox.Items[TwoButtonPress].ToString());
                         break;
 
                     case 2:
-                        richTextBox1.AppendText(Two_ListBox.Items[TwoButtonPress].ToString());
+                        WordBuilder.AppendText(Two_ListBox.Items[TwoButtonPress].ToString());
                         break;
 
                     case 3:
-                        richTextBox1.AppendText(Two_ListBox.Items[TwoButtonPress].ToString());
+                        WordBuilder.AppendText(Two_ListBox.Items[TwoButtonPress].ToString());
                         break;
 
                     case 4:
-                        richTextBox1.AppendText(Two_ListBox.Items[TwoButtonPress].ToString());
+                        WordBuilder.AppendText(Two_ListBox.Items[TwoButtonPress].ToString());
                         break;
 
                     case 5:
-                        richTextBox1.AppendText(Two_ListBox.Items[TwoButtonPress].ToString());
+                        WordBuilder.AppendText(Two_ListBox.Items[TwoButtonPress].ToString());
                         break;
 
                     case 6:
-                        richTextBox1.AppendText(Two_ListBox.Items[TwoButtonPress].ToString());
+                        WordBuilder.AppendText(Two_ListBox.Items[TwoButtonPress].ToString());
                         TwoButtonPress = -1;
                         break;                    
                 }
@@ -178,39 +180,39 @@ namespace Keyboard_V1
                 switch (ThreeButtonPress)
                 {
                     case 0:
-                        richTextBox1.AppendText(Three_ListBox.Items[ThreeButtonPress].ToString());
+                        WordBuilder.AppendText(Three_ListBox.Items[ThreeButtonPress].ToString());
                         break;
 
                     case 1:
-                        richTextBox1.AppendText(Three_ListBox.Items[ThreeButtonPress].ToString());
+                        WordBuilder.AppendText(Three_ListBox.Items[ThreeButtonPress].ToString());
                         break;
 
                     case 2:
-                        richTextBox1.AppendText(Three_ListBox.Items[ThreeButtonPress].ToString());
+                        WordBuilder.AppendText(Three_ListBox.Items[ThreeButtonPress].ToString());
                         break;
 
                     case 3:
-                        richTextBox1.AppendText(Three_ListBox.Items[ThreeButtonPress].ToString());
+                        WordBuilder.AppendText(Three_ListBox.Items[ThreeButtonPress].ToString());
                         break;
 
                     case 4:
-                        richTextBox1.AppendText(Three_ListBox.Items[ThreeButtonPress].ToString());
+                        WordBuilder.AppendText(Three_ListBox.Items[ThreeButtonPress].ToString());
                         break;
 
                     case 5:
-                        richTextBox1.AppendText(Three_ListBox.Items[ThreeButtonPress].ToString());
+                        WordBuilder.AppendText(Three_ListBox.Items[ThreeButtonPress].ToString());
                         break;
 
                     case 6:
-                        richTextBox1.AppendText(Three_ListBox.Items[ThreeButtonPress].ToString());                        
+                        WordBuilder.AppendText(Three_ListBox.Items[ThreeButtonPress].ToString());                        
                         break;
                     
                     case 7:
-                        richTextBox1.AppendText(Three_ListBox.Items[ThreeButtonPress].ToString());
+                        WordBuilder.AppendText(Three_ListBox.Items[ThreeButtonPress].ToString());
                         break;
 
                     case 8:
-                        richTextBox1.AppendText(Three_ListBox.Items[ThreeButtonPress].ToString());
+                        WordBuilder.AppendText(Three_ListBox.Items[ThreeButtonPress].ToString());
                         ThreeButtonPress = -1;
                         break;
                 }
@@ -229,31 +231,31 @@ namespace Keyboard_V1
                 switch (FourButtonPress)
                 {
                     case 0:
-                        richTextBox1.AppendText(Four_ListBox.Items[FourButtonPress].ToString());
+                        WordBuilder.AppendText(Four_ListBox.Items[FourButtonPress].ToString());
                         break;
 
                     case 1:
-                        richTextBox1.AppendText(Four_ListBox.Items[FourButtonPress].ToString());
+                        WordBuilder.AppendText(Four_ListBox.Items[FourButtonPress].ToString());
                         break;
 
                     case 2:
-                        richTextBox1.AppendText(Four_ListBox.Items[FourButtonPress].ToString());
+                        WordBuilder.AppendText(Four_ListBox.Items[FourButtonPress].ToString());
                         break;
 
                     case 3:
-                        richTextBox1.AppendText(Four_ListBox.Items[FourButtonPress].ToString());
+                        WordBuilder.AppendText(Four_ListBox.Items[FourButtonPress].ToString());
                         break;
 
                     case 4:
-                        richTextBox1.AppendText(Four_ListBox.Items[FourButtonPress].ToString());
+                        WordBuilder.AppendText(Four_ListBox.Items[FourButtonPress].ToString());
                         break;
 
                     case 5:
-                        richTextBox1.AppendText(Four_ListBox.Items[FourButtonPress].ToString());
+                        WordBuilder.AppendText(Four_ListBox.Items[FourButtonPress].ToString());
                         break;
 
                     case 6:
-                        richTextBox1.AppendText(Four_ListBox.Items[FourButtonPress].ToString());
+                        WordBuilder.AppendText(Four_ListBox.Items[FourButtonPress].ToString());
                         FourButtonPress = -1;
                         break;
                 }
@@ -272,31 +274,31 @@ namespace Keyboard_V1
                 switch (FiveButtonPress)
                 {
                     case 0:
-                        richTextBox1.AppendText(Five_ListBox.Items[FiveButtonPress].ToString());
+                        WordBuilder.AppendText(Five_ListBox.Items[FiveButtonPress].ToString());
                         break;
 
                     case 1:
-                        richTextBox1.AppendText(Five_ListBox.Items[FiveButtonPress].ToString());
+                        WordBuilder.AppendText(Five_ListBox.Items[FiveButtonPress].ToString());
                         break;
 
                     case 2:
-                        richTextBox1.AppendText(Five_ListBox.Items[FiveButtonPress].ToString());
+                        WordBuilder.AppendText(Five_ListBox.Items[FiveButtonPress].ToString());
                         break;
 
                     case 3:
-                        richTextBox1.AppendText(Five_ListBox.Items[FiveButtonPress].ToString());
+                        WordBuilder.AppendText(Five_ListBox.Items[FiveButtonPress].ToString());
                         break;
 
                     case 4:
-                        richTextBox1.AppendText(Five_ListBox.Items[FiveButtonPress].ToString());
+                        WordBuilder.AppendText(Five_ListBox.Items[FiveButtonPress].ToString());
                         break;
 
                     case 5:
-                        richTextBox1.AppendText(Five_ListBox.Items[FiveButtonPress].ToString());
+                        WordBuilder.AppendText(Five_ListBox.Items[FiveButtonPress].ToString());
                         break;
 
                     case 6:
-                        richTextBox1.AppendText(Five_ListBox.Items[FiveButtonPress].ToString());
+                        WordBuilder.AppendText(Five_ListBox.Items[FiveButtonPress].ToString());
                         FiveButtonPress = -1;
                         break;
                 }
@@ -315,31 +317,31 @@ namespace Keyboard_V1
                 switch (SixButtonPress)
                 {
                     case 0:
-                        richTextBox1.AppendText(Six_ListBox.Items[SixButtonPress].ToString());
+                        WordBuilder.AppendText(Six_ListBox.Items[SixButtonPress].ToString());
                         break;
 
                     case 1:
-                        richTextBox1.AppendText(Six_ListBox.Items[SixButtonPress].ToString());
+                        WordBuilder.AppendText(Six_ListBox.Items[SixButtonPress].ToString());
                         break;
 
                     case 2:
-                        richTextBox1.AppendText(Six_ListBox.Items[SixButtonPress].ToString());
+                        WordBuilder.AppendText(Six_ListBox.Items[SixButtonPress].ToString());
                         break;
 
                     case 3:
-                        richTextBox1.AppendText(Six_ListBox.Items[SixButtonPress].ToString());
+                        WordBuilder.AppendText(Six_ListBox.Items[SixButtonPress].ToString());
                         break;
 
                     case 4:
-                        richTextBox1.AppendText(Six_ListBox.Items[SixButtonPress].ToString());
+                        WordBuilder.AppendText(Six_ListBox.Items[SixButtonPress].ToString());
                         break;
 
                     case 5:
-                        richTextBox1.AppendText(Six_ListBox.Items[SixButtonPress].ToString());
+                        WordBuilder.AppendText(Six_ListBox.Items[SixButtonPress].ToString());
                         break;
 
                     case 6:
-                        richTextBox1.AppendText(Six_ListBox.Items[SixButtonPress].ToString());
+                        WordBuilder.AppendText(Six_ListBox.Items[SixButtonPress].ToString());
                         SixButtonPress = -1;
                         break;
                 }
@@ -358,31 +360,31 @@ namespace Keyboard_V1
                 switch (SevenButtonPress)
                 {
                     case 0:
-                        richTextBox1.AppendText(Seven_ListBox.Items[SevenButtonPress].ToString());
+                        WordBuilder.AppendText(Seven_ListBox.Items[SevenButtonPress].ToString());
                         break;
 
                     case 1:
-                        richTextBox1.AppendText(Seven_ListBox.Items[SevenButtonPress].ToString());
+                        WordBuilder.AppendText(Seven_ListBox.Items[SevenButtonPress].ToString());
                         break;
 
                     case 2:
-                        richTextBox1.AppendText(Seven_ListBox.Items[SevenButtonPress].ToString());
+                        WordBuilder.AppendText(Seven_ListBox.Items[SevenButtonPress].ToString());
                         break;
 
                     case 3:
-                        richTextBox1.AppendText(Seven_ListBox.Items[SevenButtonPress].ToString());
+                        WordBuilder.AppendText(Seven_ListBox.Items[SevenButtonPress].ToString());
                         break;
 
                     case 4:
-                        richTextBox1.AppendText(Seven_ListBox.Items[SevenButtonPress].ToString());
+                        WordBuilder.AppendText(Seven_ListBox.Items[SevenButtonPress].ToString());
                         break;
 
                     case 5:
-                        richTextBox1.AppendText(Seven_ListBox.Items[SevenButtonPress].ToString());
+                        WordBuilder.AppendText(Seven_ListBox.Items[SevenButtonPress].ToString());
                         break;
 
                     case 6:
-                        richTextBox1.AppendText(Seven_ListBox.Items[SevenButtonPress].ToString());
+                        WordBuilder.AppendText(Seven_ListBox.Items[SevenButtonPress].ToString());
                         SevenButtonPress = -1;
                         break;
                 }
@@ -401,31 +403,31 @@ namespace Keyboard_V1
                 switch (EightButtonPress)
                 {
                     case 0:
-                        richTextBox1.AppendText(Eight_ListBox.Items[EightButtonPress].ToString());
+                        WordBuilder.AppendText(Eight_ListBox.Items[EightButtonPress].ToString());
                         break;
 
                     case 1:
-                        richTextBox1.AppendText(Eight_ListBox.Items[EightButtonPress].ToString());
+                        WordBuilder.AppendText(Eight_ListBox.Items[EightButtonPress].ToString());
                         break;
 
                     case 2:
-                        richTextBox1.AppendText(Eight_ListBox.Items[EightButtonPress].ToString());
+                        WordBuilder.AppendText(Eight_ListBox.Items[EightButtonPress].ToString());
                         break;
 
                     case 3:
-                        richTextBox1.AppendText(Eight_ListBox.Items[EightButtonPress].ToString());
+                        WordBuilder.AppendText(Eight_ListBox.Items[EightButtonPress].ToString());
                         break;
 
                     case 4:
-                        richTextBox1.AppendText(Eight_ListBox.Items[EightButtonPress].ToString());
+                        WordBuilder.AppendText(Eight_ListBox.Items[EightButtonPress].ToString());
                         break;
 
                     case 5:
-                        richTextBox1.AppendText(Eight_ListBox.Items[EightButtonPress].ToString());
+                        WordBuilder.AppendText(Eight_ListBox.Items[EightButtonPress].ToString());
                         break;
 
                     case 6:
-                        richTextBox1.AppendText(Eight_ListBox.Items[EightButtonPress].ToString());
+                        WordBuilder.AppendText(Eight_ListBox.Items[EightButtonPress].ToString());
                         EightButtonPress = -1;
                         break;
                 }
@@ -444,31 +446,31 @@ namespace Keyboard_V1
                 switch (NineButtonPress)
                 {
                     case 0:
-                        richTextBox1.AppendText(Nine_ListBox.Items[NineButtonPress].ToString());
+                        WordBuilder.AppendText(Nine_ListBox.Items[NineButtonPress].ToString());
                         break;
 
                     case 1:
-                        richTextBox1.AppendText(Nine_ListBox.Items[NineButtonPress].ToString());
+                        WordBuilder.AppendText(Nine_ListBox.Items[NineButtonPress].ToString());
                         break;
 
                     case 2:
-                        richTextBox1.AppendText(Nine_ListBox.Items[NineButtonPress].ToString());
+                        WordBuilder.AppendText(Nine_ListBox.Items[NineButtonPress].ToString());
                         break;
 
                     case 3:
-                        richTextBox1.AppendText(Nine_ListBox.Items[NineButtonPress].ToString());
+                        WordBuilder.AppendText(Nine_ListBox.Items[NineButtonPress].ToString());
                         break;
 
                     case 4:
-                        richTextBox1.AppendText(Nine_ListBox.Items[NineButtonPress].ToString());
+                        WordBuilder.AppendText(Nine_ListBox.Items[NineButtonPress].ToString());
                         break;
 
                     case 5:
-                        richTextBox1.AppendText(Nine_ListBox.Items[NineButtonPress].ToString());
+                        WordBuilder.AppendText(Nine_ListBox.Items[NineButtonPress].ToString());
                         break;
 
                     case 6:
-                        richTextBox1.AppendText(Nine_ListBox.Items[NineButtonPress].ToString());
+                        WordBuilder.AppendText(Nine_ListBox.Items[NineButtonPress].ToString());
                         NineButtonPress = -1;
                         break;
                 }
@@ -499,6 +501,11 @@ namespace Keyboard_V1
         }
 
         private void ButtonTimer_Tick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Symbols_Btn_Click(object sender, EventArgs e)
         {
 
         }
