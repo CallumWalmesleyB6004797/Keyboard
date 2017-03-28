@@ -58,9 +58,11 @@ namespace Keyboard_V1
         }
 
         private void Zero_Btn_Click(object sender, EventArgs e)
-        {
+        {   //Appends the value of the WordBuilder text box to the notepad.
             Notepad.AppendText(WordBuilder.Text.ToString());
+            //Followed by a sapce in the notepad.
             Notepad.AppendText(" ");
+            //Empty the KeySequence textbox.
             KeySequence_TextBox.Text = String.Empty;
             
         }
