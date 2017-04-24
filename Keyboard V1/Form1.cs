@@ -630,7 +630,37 @@ namespace Keyboard_V1
 
         private void Symbols_Btn_Click(object sender, EventArgs e)
         {
+            if (Mode_Box.Text == "Multi-Press")
+            {
+                AsterixButtonPress++;
+                OneButtonPress = -1;
+                TwoButtonPress = -1;
+                ThreeButtonPress = -1;
+                FourButtonPress = -1;
+                FiveButtonPress = -1;
+                SixButtonPress = -1;
+                SevenButtonPress = -1;
+                EightButtonPress = -1;
+                NineButtonPress = -1;
+                HashButtonPress = -1;
 
+                switch (AsterixButtonPress)
+                {
+                    case 0:
+                        WordBuilder.AppendText(Asterix_ListBox.Items[AsterixButtonPress].ToString());
+                        break;
+
+                    case 1:
+                        WordBuilder.AppendText(Asterix_ListBox.Items[AsterixButtonPress].ToString());
+                        break;
+
+                    case 2:
+                        WordBuilder.AppendText(Asterix_ListBox.Items[AsterixButtonPress].ToString());
+                        AsterixButtonPress = -1;
+                        break;
+                }
+
+            }
         }
     }
 }
