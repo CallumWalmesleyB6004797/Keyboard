@@ -88,6 +88,7 @@
             this.KeySequence_TextBox.Name = "KeySequence_TextBox";
             this.KeySequence_TextBox.Size = new System.Drawing.Size(100, 20);
             this.KeySequence_TextBox.TabIndex = 22;
+            this.KeySequence_TextBox.Visible = false;
             this.KeySequence_TextBox.TextChanged += new System.EventHandler(this.KeySequence_TextBox_TextChanged);
             // 
             // menuStrip1
@@ -383,6 +384,8 @@
             this.Seven_ListBox.Name = "Seven_ListBox";
             this.Seven_ListBox.Size = new System.Drawing.Size(29, 43);
             this.Seven_ListBox.TabIndex = 25;
+            this.Seven_ListBox.Visible = false;
+            this.Seven_ListBox.SelectedIndexChanged += new System.EventHandler(this.Seven_ListBox_SelectedIndexChanged);
             // 
             // Eight_ListBox
             // 
@@ -399,6 +402,8 @@
             this.Eight_ListBox.Name = "Eight_ListBox";
             this.Eight_ListBox.Size = new System.Drawing.Size(29, 43);
             this.Eight_ListBox.TabIndex = 26;
+            this.Eight_ListBox.Visible = false;
+            this.Eight_ListBox.SelectedIndexChanged += new System.EventHandler(this.Eight_ListBox_SelectedIndexChanged);
             // 
             // Nine_ListBox
             // 
@@ -415,6 +420,8 @@
             this.Nine_ListBox.Name = "Nine_ListBox";
             this.Nine_ListBox.Size = new System.Drawing.Size(29, 43);
             this.Nine_ListBox.TabIndex = 27;
+            this.Nine_ListBox.Visible = false;
+            this.Nine_ListBox.SelectedIndexChanged += new System.EventHandler(this.Nine_ListBox_SelectedIndexChanged);
             // 
             // Six_ListBox
             // 
@@ -431,6 +438,8 @@
             this.Six_ListBox.Name = "Six_ListBox";
             this.Six_ListBox.Size = new System.Drawing.Size(29, 43);
             this.Six_ListBox.TabIndex = 30;
+            this.Six_ListBox.Visible = false;
+            this.Six_ListBox.SelectedIndexChanged += new System.EventHandler(this.Six_ListBox_SelectedIndexChanged);
             // 
             // Five_ListBox
             // 
@@ -447,6 +456,8 @@
             this.Five_ListBox.Name = "Five_ListBox";
             this.Five_ListBox.Size = new System.Drawing.Size(29, 43);
             this.Five_ListBox.TabIndex = 29;
+            this.Five_ListBox.Visible = false;
+            this.Five_ListBox.SelectedIndexChanged += new System.EventHandler(this.Five_ListBox_SelectedIndexChanged);
             // 
             // Four_ListBox
             // 
@@ -463,6 +474,8 @@
             this.Four_ListBox.Name = "Four_ListBox";
             this.Four_ListBox.Size = new System.Drawing.Size(29, 43);
             this.Four_ListBox.TabIndex = 28;
+            this.Four_ListBox.Visible = false;
+            this.Four_ListBox.SelectedIndexChanged += new System.EventHandler(this.Four_ListBox_SelectedIndexChanged);
             // 
             // Three_ListBox
             // 
@@ -481,6 +494,8 @@
             this.Three_ListBox.Name = "Three_ListBox";
             this.Three_ListBox.Size = new System.Drawing.Size(29, 43);
             this.Three_ListBox.TabIndex = 33;
+            this.Three_ListBox.Visible = false;
+            this.Three_ListBox.SelectedIndexChanged += new System.EventHandler(this.Three_ListBox_SelectedIndexChanged);
             // 
             // Two_ListBox
             // 
@@ -497,6 +512,8 @@
             this.Two_ListBox.Name = "Two_ListBox";
             this.Two_ListBox.Size = new System.Drawing.Size(29, 43);
             this.Two_ListBox.TabIndex = 32;
+            this.Two_ListBox.Visible = false;
+            this.Two_ListBox.SelectedIndexChanged += new System.EventHandler(this.Two_ListBox_SelectedIndexChanged);
             // 
             // One_ListBox
             // 
@@ -515,6 +532,7 @@
             this.One_ListBox.Name = "One_ListBox";
             this.One_ListBox.Size = new System.Drawing.Size(29, 43);
             this.One_ListBox.TabIndex = 31;
+            this.One_ListBox.Visible = false;
             this.One_ListBox.SelectedIndexChanged += new System.EventHandler(this.One_ListBox_SelectedIndexChanged);
             // 
             // Hash_ListBox
@@ -528,6 +546,8 @@
             this.Hash_ListBox.Name = "Hash_ListBox";
             this.Hash_ListBox.Size = new System.Drawing.Size(29, 43);
             this.Hash_ListBox.TabIndex = 36;
+            this.Hash_ListBox.Visible = false;
+            this.Hash_ListBox.SelectedIndexChanged += new System.EventHandler(this.Hash_ListBox_SelectedIndexChanged);
             // 
             // Asterix_ListBox
             // 
@@ -540,6 +560,8 @@
             this.Asterix_ListBox.Name = "Asterix_ListBox";
             this.Asterix_ListBox.Size = new System.Drawing.Size(29, 43);
             this.Asterix_ListBox.TabIndex = 34;
+            this.Asterix_ListBox.Visible = false;
+            this.Asterix_ListBox.SelectedIndexChanged += new System.EventHandler(this.Asterix_ListBox_SelectedIndexChanged);
             // 
             // ButtonTimer
             // 
