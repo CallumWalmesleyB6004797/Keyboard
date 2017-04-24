@@ -420,7 +420,16 @@ namespace Keyboard_V1
             if (Mode_Box.Text == "Multi-Press")
             {
                 SevenButtonPress++;
-               
+                OneButtonPress = -1;
+                TwoButtonPress = -1;
+                ThreeButtonPress = -1;
+                FourButtonPress = -1;
+                FiveButtonPress = -1;
+                SixButtonPress = -1;
+                EightButtonPress = -1;
+                NineButtonPress = -1;
+                HashButtonPress = -1;
+                AsterixButtonPress = -1;
                 switch (SevenButtonPress)
                 {
                     case 0:
@@ -463,6 +472,16 @@ namespace Keyboard_V1
             if (Mode_Box.Text == "Multi-Press")
             {
                 EightButtonPress++;
+                OneButtonPress = -1;
+                TwoButtonPress = -1;
+                ThreeButtonPress = -1;
+                FourButtonPress = -1;
+                FiveButtonPress = -1;
+                SixButtonPress = -1;
+                SevenButtonPress = -1;
+                NineButtonPress = -1;
+                HashButtonPress = -1;
+                AsterixButtonPress = -1;
 
                 switch (EightButtonPress)
                 {
