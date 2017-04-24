@@ -613,8 +613,8 @@ namespace Keyboard_V1
 
         private void Enter_Btn_Click(object sender, EventArgs e)
         {
-            Notepad.AppendText(Environment.NewLine);
-            Notepad.Focus();
+            Notepad.AppendText(Environment.NewLine); //Creates a new line
+            Notepad.Focus(); //Makes a cursor appear in the notepad showing where the text is going to be appended to
             
         }
 
