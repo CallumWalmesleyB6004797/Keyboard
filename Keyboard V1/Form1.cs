@@ -580,6 +580,7 @@ namespace Keyboard_V1
         {
             if (Mode_Box.Text == "Multi-Press")
             {
+                HashButtonPress++;
                 OneButtonPress = -1;
                 TwoButtonPress = -1;
                 ThreeButtonPress = -1;
@@ -590,6 +591,22 @@ namespace Keyboard_V1
                 EightButtonPress = -1;
                 NineButtonPress = -1;
                 AsterixButtonPress = -1;
+
+                switch (HashButtonPress)
+                {
+                    case 0:
+                        WordBuilder.AppendText(Hash_ListBox.Items[HashButtonPress].ToString());
+                        break;
+
+                    case 1:
+                        WordBuilder.AppendText(Hash_ListBox.Items[HashButtonPress].ToString());
+                        break;
+
+                    case 2:
+                        WordBuilder.AppendText(Hash_ListBox.Items[HashButtonPress].ToString());
+                        HashButtonPress = -1;
+                        break;
+                }
 
             }
         }
