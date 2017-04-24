@@ -63,7 +63,9 @@ namespace Keyboard_V1
             //Followed by a sapce in the notepad.
             Notepad.AppendText(" ");
             //Empty the KeySequence textbox.
-            KeySequence_TextBox.Text = String.Empty;
+            KeySequence_TextBox.Clear();
+            //Empty the WordBuilder
+            WordBuilder.Clear();
             
         }
 
@@ -83,6 +85,16 @@ namespace Keyboard_V1
             if (Mode_Box.Text == "Multi-Press")
             {   //Increments the value of the variable by 1 everytime the button is clicked.
                 OneButtonPress++;
+                TwoButtonPress = -1;
+                ThreeButtonPress = -1;
+                FourButtonPress = -1;
+                FiveButtonPress = -1;
+                SixButtonPress = -1;
+                SevenButtonPress = -1;
+                EightButtonPress = -1;
+                NineButtonPress = -1;
+                HashButtonPress = -1;
+                AsterixButtonPress = -1;
                 //Switch case for the variable OneButtonPress
                 switch (OneButtonPress)
                 {
@@ -135,6 +147,16 @@ namespace Keyboard_V1
             if (Mode_Box.Text == "Multi-Press")
             {   
                 TwoButtonPress++;
+                OneButtonPress = -1;
+                ThreeButtonPress = -1;
+                FourButtonPress = -1;
+                FiveButtonPress = -1;
+                SixButtonPress = -1;
+                SevenButtonPress = -1;
+                EightButtonPress = -1;
+                NineButtonPress = -1;
+                HashButtonPress = -1;
+                AsterixButtonPress = -1;
 
                 switch (TwoButtonPress)
                 {
@@ -178,6 +200,16 @@ namespace Keyboard_V1
             if (Mode_Box.Text == "Multi-Press")
             {
                 ThreeButtonPress++;
+                OneButtonPress = -1;
+                TwoButtonPress = -1;
+                FourButtonPress = -1;
+                FiveButtonPress = -1;
+                SixButtonPress = -1;
+                SevenButtonPress = -1;
+                EightButtonPress = -1;
+                NineButtonPress = -1;
+                HashButtonPress = -1;
+                AsterixButtonPress = -1;
 
                 switch (ThreeButtonPress)
                 {
@@ -229,6 +261,16 @@ namespace Keyboard_V1
             if (Mode_Box.Text == "Multi-Press")
             {
                 FourButtonPress++;
+                OneButtonPress = -1;
+                TwoButtonPress = -1;
+                ThreeButtonPress = -1;
+                FiveButtonPress = -1;
+                SixButtonPress = -1;
+                SevenButtonPress = -1;
+                EightButtonPress = -1;
+                NineButtonPress = -1;
+                HashButtonPress = -1;
+                AsterixButtonPress = -1;
 
                 switch (FourButtonPress)
                 {
@@ -272,6 +314,16 @@ namespace Keyboard_V1
             if (Mode_Box.Text == "Multi-Press")
             {
                 FiveButtonPress++;
+                OneButtonPress = -1;
+                TwoButtonPress = -1;
+                ThreeButtonPress = -1;
+                FourButtonPress = -1;
+                SixButtonPress = -1;
+                SevenButtonPress = -1;
+                EightButtonPress = -1;
+                NineButtonPress = -1;
+                HashButtonPress = -1;
+                AsterixButtonPress = -1;
 
                 switch (FiveButtonPress)
                 {
@@ -315,6 +367,16 @@ namespace Keyboard_V1
             if (Mode_Box.Text == "Multi-Press")
             {
                 SixButtonPress++;
+                OneButtonPress = -1;
+                TwoButtonPress = -1;
+                ThreeButtonPress = -1;
+                FourButtonPress = -1;
+                FiveButtonPress = -1;
+                SevenButtonPress = -1;
+                EightButtonPress = -1;
+                NineButtonPress = -1;
+                HashButtonPress = -1;
+                AsterixButtonPress = -1;
 
                 switch (SixButtonPress)
                 {
@@ -358,7 +420,7 @@ namespace Keyboard_V1
             if (Mode_Box.Text == "Multi-Press")
             {
                 SevenButtonPress++;
-
+               
                 switch (SevenButtonPress)
                 {
                     case 0:

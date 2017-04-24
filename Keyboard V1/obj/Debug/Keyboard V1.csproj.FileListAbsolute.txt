@@ -25,3 +25,12 @@ C:\Users\Callum\Desktop\Keyboard\Keyboard V1\obj\Debug\Keyboard V1.csprojResolve
 C:\Users\Callum\Desktop\Keyboard\Keyboard V1\obj\Debug\Keyboard_V1.Form1.resources
 C:\Users\Callum\Desktop\Keyboard\Keyboard V1\obj\Debug\Keyboard_V1.Properties.Resources.resources
 C:\Users\Callum\Desktop\Keyboard\Keyboard V1\obj\Debug\Keyboard V1.csproj.GenerateResource.Cache
+C:\Users\cwalm\Desktop\Keyboard Dir\Keyboard\Keyboard V1\bin\Debug\Keyboard V1.exe.config
+C:\Users\cwalm\Desktop\Keyboard Dir\Keyboard\Keyboard V1\obj\Debug\Keyboard V1.exe
+C:\Users\cwalm\Desktop\Keyboard Dir\Keyboard\Keyboard V1\obj\Debug\Keyboard V1.pdb
+C:\Users\cwalm\Desktop\Keyboard Dir\Keyboard\Keyboard V1\obj\Debug\Keyboard V1.csprojResolveAssemblyReference.cache
+C:\Users\cwalm\Desktop\Keyboard Dir\Keyboard\Keyboard V1\obj\Debug\Keyboard_V1.Form1.resources
+C:\Users\cwalm\Desktop\Keyboard Dir\Keyboard\Keyboard V1\obj\Debug\Keyboard_V1.Properties.Resources.resources
+C:\Users\cwalm\Desktop\Keyboard Dir\Keyboard\Keyboard V1\obj\Debug\Keyboard V1.csproj.GenerateResource.Cache
+C:\Users\cwalm\Desktop\Keyboard Dir\Keyboard\Keyboard V1\bin\Debug\Keyboard V1.exe
+C:\Users\cwalm\Desktop\Keyboard Dir\Keyboard\Keyboard V1\bin\Debug\Keyboard V1.pdb
