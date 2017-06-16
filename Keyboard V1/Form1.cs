@@ -415,7 +415,7 @@ namespace Keyboard_V1
 
         private void Seven_Btn_Click_1(object sender, EventArgs e)
         {
-            KeySequence_TextBox.AppendText("7".ToString());
+            KeySequence_TextBox.AppendText("7".ToString()); //test comment blah blah blah
 
             if (Mode_Box.Text == "Multi-Press")
             {
